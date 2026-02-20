@@ -425,6 +425,7 @@ export function AdminPage() {
                   onChange={(event) =>
                     setUploadForm((existing) => ({ ...existing, caption: event.target.value }))
                   }
+                  placeholder="this is me shaking mad ass in california"
                   value={uploadForm.caption}
                 />
               </label>
