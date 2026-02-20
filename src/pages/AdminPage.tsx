@@ -312,7 +312,7 @@ export function AdminPage() {
   if (!isAuthenticated) {
     return (
       <main className="auth-panel panel">
-        <h1 className="admin-title">Jesse Admin</h1>
+        <h1 className="admin-title">Admin Login</h1>
         <p className="admin-subtitle">Sign in to upload, edit, and manage the live photo journal.</p>
 
         {authError ? <div className="message error">{authError}</div> : null}
@@ -359,12 +359,12 @@ export function AdminPage() {
     <main className="admin-shell">
       <header className="admin-bar">
         <div>
-          <h1 className="admin-title">Jesse Fischer Photography</h1>
-          <p className="admin-subtitle">Admin dashboard</p>
+          <h1 className="admin-title">Jesse Fischer Photos</h1>
+          <p className="admin-subtitle">Admin Dashboard</p>
         </div>
         <div className="btn-row">
           <Link className="btn ghost" to="/">
-            View site
+            View Site
           </Link>
           <button className="btn secondary" onClick={handleLogout} type="button">
             Logout
@@ -384,7 +384,7 @@ export function AdminPage() {
 
             <form className="form-grid spacer-top" onSubmit={handleUpload}>
               <label>
-                Photo file
+                Photo File
                 <input
                   accept="image/*"
                   onChange={(event) => setUploadFile(event.target.files?.[0] ?? null)}
@@ -407,7 +407,7 @@ export function AdminPage() {
                 </label>
 
                 <label>
-                  Shot date
+                  Shot Date
                   <input
                     onChange={(event) =>
                       setUploadForm((existing) => ({ ...existing, shotDate: event.target.value }))
@@ -443,7 +443,7 @@ export function AdminPage() {
 
               <div className="btn-row">
                 <button className="btn primary" disabled={uploadBusy} type="submit">
-                  {uploadBusy ? 'Uploading...' : 'Upload photo'}
+                  {uploadBusy ? 'Uploading...' : 'Upload Photo'}
                 </button>
               </div>
             </form>

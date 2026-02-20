@@ -1,4 +1,4 @@
-# Jesse Fischer Photography
+# Jesse Fischer Photos
 
 Public photography portfolio with a private admin area for managing images and metadata.
 

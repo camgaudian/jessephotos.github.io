@@ -91,11 +91,8 @@ export function HomePage() {
   return (
     <main className="site-shell">
       <header className="hero">
-        <span className="hero-eyebrow">Fine Art and Documentary Work</span>
-        <h1>Jesse Fischer Photography</h1>
-        <p>
-          A journal of stillness, contrast, and moments that are gone before most people notice them.
-        </p>
+        <span className="hero-eyebrow">Photography Portfolio</span>
+        <h1>Jesse Fischer Photos</h1>
       </header>
 
       {!isSupabaseConfigured ? (
